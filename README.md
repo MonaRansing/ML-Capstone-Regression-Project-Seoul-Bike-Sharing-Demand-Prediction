@@ -78,43 +78,43 @@ Elastic Net Regression
 Here I used SHAP library.
 
 # Conclusion
-1. EDA insights:
+## 1. EDA insights:
 
-* There's a rise in bike rentals during 2018 compared to 2017, with noticeable drops in rentals during 2017, suggesting increased popularity or intensified marketing efforts from early 2018 onwards.
+  * There's a rise in bike rentals during 2018 compared to 2017, with noticeable drops in rentals during 2017, suggesting increased popularity or intensified marketing efforts from early 2018 onwards.
 
-* Bike rental demand is high in warm weather condition and low in mild condition.
+  * Bike rental demand is high in warm weather condition and low in mild condition.
 
-* The rented bike count is highest in the summer season, followed by autumn and then spring. The rented bike count is lowest in the winter season.
+  * The rented bike count is highest in the summer season, followed by autumn and then spring. The rented bike count is lowest in the winter season.
 
-* when the wind speed is low then the rented bike count is hight and when wind speed is maximum then the bike count is less.
+  * when the wind speed is low then the rented bike count is hight and when wind speed is maximum then the bike count is less.
 
-* When there is a holiday then the bike count is very less and when there is no holiday then the rent bike count is very high.
+  * When there is a holiday then the bike count is very less and when there is no holiday then the rent bike count is very high.
 
-* Better visibility conditions are associated with higher bike rental counts.
+  * Better visibility conditions are associated with higher bike rental counts.
 
-* When dew point temperature is maximum then the count of the rented bike is maximum and when temperature is minimum then count is also minimum.
+  * When dew point temperature is maximum then the count of the rented bike is maximum and when temperature is minimum then count is also minimum.
 
-* On a functioning day the rent bike count is high and when there is no functioning day then the rented bike count is zero.
+  * On a functioning day the rent bike count is high and when there is no functioning day then the rented bike count is zero.
 
-* Rented bike count has a strong positive correlation with temperature (0.54), meaning higher temperatures are associated with more bike rentals.
+  * Rented bike count has a strong positive correlation with temperature (0.54), meaning higher temperatures are associated with more bike rentals.
 
-2. Machine Learning Model:
+## 2. Machine Learning Model:
 
-* Based on these metrics:
+  * Based on these metrics:
 
-* Linear Regression, Ridge Regression, and Lasso Regression have very similar performance across all metrics.
+  * Linear Regression, Ridge Regression, and Lasso Regression have very similar performance across all metrics.
 
-* Elastic Net Regression performs slightly worse compared to the other models, with a higher MAE, MSE, and lower R2 Score.
+  * Elastic Net Regression performs slightly worse compared to the other models, with a higher MAE, MSE, and lower R2 Score.
 
-* Considering the similarity in performance between Linear Regression, Ridge Regression, and Lasso Regression, either of these models can be considered the best choice for this dataset. However, Elastic Net Regression may not be the preferred choice in this case due to slightly poorer performance.
+  * Considering the similarity in performance between Linear Regression, Ridge Regression, and Lasso Regression, either of these models can be considered the best choice for this dataset. However, Elastic Net Regression may not be the preferred choice in this case due to slightly poorer performance.
 
-* All 4 models have been explained with the help of SHAP library.
+  * All 4 models have been explained with the help of SHAP library.
 
-* Temperature and Hour are the two most important factors according to all the models.
+  * Temperature and Hour are the two most important factors according to all the models.
 
-3. Challenges:
+## 3. Challenges:
 
-* Handling outliers to avoid their impact on predictions.
-* Converting categorical variables into numerical representations.
-* Managing multicollinearity among predictor variables.
-* Choosing an easy-to-understand technique to explain model predictions.
+  * Handling outliers to avoid their impact on predictions.
+  * Converting categorical variables into numerical representations.
+  * Managing multicollinearity among predictor variables.
+  * Choosing an easy-to-understand technique to explain model predictions.
